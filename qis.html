@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Balla Revathi | QIS Portfolio</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* ---------- GLOBAL ---------- */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f6f8fc;
+}
+
+/* ---------- NAVBAR ---------- */
+
+nav{
+position:fixed;
+width:100%;
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 70px;
+box-shadow:0 4px 15px rgba(0,0,0,.1);
+z-index:1000;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#0b3d91;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:#222;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover,
+nav a.active{
+color:#0b3d91;
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+height:100vh;
+background:url("qis.jpg") center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.typing{
+font-size:45px;
+border-right:3px solid white;
+white-space:nowrap;
+overflow:hidden;
+}
+
+/* ---------- SECTION ---------- */
+
+.container{
+padding:100px 10%;
+}
+
+.title{
+text-align:center;
+font-size:36px;
+margin-bottom:50px;
+color:#0b3d91;
+}
+
+/* ---------- ABOUT ---------- */
+
+.about{
+display:flex;
+gap:50px;
+align-items:center;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.about img{
+width:260px;
+height:260px;
+border-radius:15px;
+object-fit:cover;
+}
+
+.about-text{
+font-size:18px;
+font-weight:600;
+line-height:1.7;
+}
+
+/* ---------- GALLERY ---------- */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:230px;
+border-radius:15px;
+object-fit:cover;
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.08);
+}
+
+/* ---------- ACADEMICS ---------- */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card i{
+font-size:35px;
+color:#0b3d91;
+margin-bottom:15px;
+}
+
+/* ---------- PLACEMENTS ---------- */
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+border-radius:15px;
+overflow:hidden;
+}
+
+th{
+background:#0b3d91;
+color:white;
+padding:15px;
+}
+
+td{
+padding:15px;
+text-align:center;
+}
+
+tr:hover{
+background:#f1f5ff;
+}
+
+.company{
+display:flex;
+align-items:center;
+gap:10px;
+justify-content:center;
+}
+
+.company img{
+width:35px;
+}
+
+/* ---------- FACILITIES ---------- */
+
+.facilities{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.facility{
+background:white;
+padding:25px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.facility:hover{
+transform:scale(1.05);
+}
+
+.facility i{
+font-size:35px;
+color:#0b3d91;
+margin-bottom:10px;
+}
+
+/* ---------- ADDRESS ---------- */
+
+.contact{
+background:#0b3d91;
+color:white;
+padding:60px;
+border-radius:20px;
+display:grid;
+grid-template-columns:1fr 1.5fr;
+gap:40px;
+}
+
+.map iframe{
+width:100%;
+height:400px;
+border:0;
+border-radius:15px;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+<div class="logo">QIS ENGINEER</div>
+
+<ul>
+<li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+<li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+<li><a href="#gallery"><i class="fas fa-image"></i> Gallery</a></li>
+<li><a href="#academics"><i class="fas fa-book"></i> Academics</a></li>
+<li><a href="#placements"><i class="fas fa-briefcase"></i> Placements</a></li>
+<li><a href="#facilities"><i class="fas fa-building"></i> Facilities</a></li>
+<li><a href="#address"><i class="fas fa-map-marker-alt"></i> Address</a></li>
+</ul>
+</nav>
+
+<!-- HOME -->
+
+<section id="home" class="hero">
+<h1 id="type" class="typing"></h1>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="container">
+<h2 class="title">About Me</h2>
+
+<div class="about">
+<img src="revathi.jpg">
+<div class="about-text">
+<h2>Balla Revathi</h2>
+<p><b>Roll No:</b> 24491A0511</p>
+<p><b>Branch:</b> CSE - 2</p>
+<p>
+Passionate Computer Science Engineering student interested in
+Web Development and Software Applications.
+My aim is to become a successful Software Engineer.
+</p>
+</div>
+</div>
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery" class="container">
+<h2 class="title">Campus Gallery</h2>
+
+<div class="gallery">
+<img src="qis1.jpg">
+<img src="qis2.jpg">
+<img src="qis3.jpg">
+<img src="qis4.jpg">
+</div>
+</section>
+
+<!-- ACADEMICS -->
+
+<section id="academics" class="container">
+<h2 class="title">Academics</h2>
+
+<h3>Under Graduate Programs</h3>
+<div class="grid">
+<div class="card"><i class="fas fa-laptop-code"></i>CSE</div>
+<div class="card"><i class="fas fa-robot"></i>AI & ML</div>
+<div class="card"><i class="fas fa-database"></i>Data Science</div>
+<div class="card"><i class="fas fa-user-shield"></i>Cyber Security</div>
+<div class="card"><i class="fas fa-microchip"></i>ECE</div>
+<div class="card"><i class="fas fa-gears"></i>Mechanical</div>
+</div>
+
+<br><br>
+
+<h3>Post Graduate Programs</h3>
+<div class="grid">
+<div class="card"><i class="fas fa-user-graduate"></i>M.Tech</div>
+<div class="card"><i class="fas fa-chart-line"></i>MBA</div>
+<div class="card"><i class="fas fa-laptop"></i>MCA</div>
+</div>
+
+</section>
+
+<!-- PLACEMENTS -->
+
+<section id="placements" class="container">
+<h2 class="title">Placements</h2>
+
+<table>
+<tr>
+<th>Company</th>
+<th>Branch</th>
+<th>Students Placed</th>
+<th>Package</th>
+</tr>
+
+<tr>
+<td class="company"><img src="tcs.png">TCS</td>
+<td>CSE</td>
+<td>150+</td>
+<td>7.8 LPA</td>
+</tr>
+
+<tr>
+<td class="company"><img src="infosys.png">Infosys</td>
+<td>AI & ML</td>
+<td>105</td>
+<td>6.5 LPA</td>
+</tr>
+
+<tr>
+<td class="company"><img src="wipro.png">Wipro</td>
+<td>ECE</td>
+<td>88</td>
+<td>5.8 LPA</td>
+</tr>
+
+<tr>
+<td class="company"><img src="amazon.png">Amazon</td>
+<td>CSE</td>
+<td>12</td>
+<td>18 LPA</td>
+</tr>
+
+</table>
+</section>
+
+<!-- FACILITIES -->
+
+<section id="facilities" class="container">
+<h2 class="title">Campus Facilities</h2>
+
+<div class="facilities">
+
+<div class="facility"><i class="fas fa-desktop"></i>Advanced Computer Labs</div>
+<div class="facility"><i class="fas fa-book"></i>Digital Library</div>
+<div class="facility"><i class="fas fa-basketball-ball"></i>Sports Complex</div>
+<div class="facility"><i class="fas fa-chalkboard-teacher"></i>Smart Classrooms</div>
+<div class="facility"><i class="fas fa-wifi"></i>Campus WiFi</div>
+<div class="facility"><i class="fas fa-building"></i>Auditorium</div>
+
+</div>
+</section>
+
+<!-- ADDRESS -->
+
+<section id="address" class="container">
+
+<div class="contact">
+
+<div>
+<h2>Campus Address</h2>
+<p>QIS College Of Engineering & Technology</p>
+<p>Vengamukkapalem, Ongole</p>
+<p>📞 +91 9246419542</p>
+<p>✉ principal@qiscet.edu.in</p>
+</div>
+
+<div class="map">
+<iframe src="https://www.google.com/maps?q=QIS+College+of+Engineering+and+Technology&output=embed"></iframe>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Developed by <b>Balla Revathi</b>
+</footer>
+
+<script>
+
+/* TYPEWRITER EFFECT */
+
+const text="QIS College Of Engineering & Technology";
+let i=0;
+function type(){
+if(i<text.length){
+document.getElementById("type").innerHTML+=text.charAt(i);
+i++;
+setTimeout(type,70);
+}
+}
+type();
+
+/* ACTIVE NAVBAR */
+
+const sections=document.querySelectorAll("section");
+const navLinks=document.querySelectorAll("nav a");
+
+window.onscroll=()=>{
+let current="";
+sections.forEach(sec=>{
+const top=window.scrollY;
+const offset=sec.offsetTop-150;
+const height=sec.offsetHeight;
+if(top>=offset && top<offset+height){
+current=sec.getAttribute("id");
+}
+});
+
+navLinks.forEach(a=>{
+a.classList.remove("active");
+document.querySelector("nav a[href*="+current+"]").classList.add("active");
+});
+};
+
+</script>
+
+</body>
+</html>
